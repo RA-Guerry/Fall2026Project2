@@ -122,6 +122,7 @@ function draw() {
       rect(-5,270,90,100);
        rect(320,270,90,100);
     } else if (name == "Dripstone Caves"){
+    fill(80,220,80);
     rect(-5,5,405,400);
     fill(100,60,20);
     rect(-5,15,405,400);
@@ -131,8 +132,8 @@ function draw() {
       rect(-5,320,405,100);
       rect(-5,270,90,100);
        rect(320,270,90,100);
-      fill(80,220,80);
     } else if (name == "Lush Caves"){
+      fill(80,220,80);
     rect(-5,5,405,400);
     fill(100,60,20);
     rect(-5,15,405,400);
@@ -142,7 +143,6 @@ function draw() {
       rect(-5,320,405,100);
       rect(-5,270,90,100);
        rect(320,270,90,100);
-      fill(80,220,80);
     } else{
       fill(80,220,80);
     rect(-5,5,405,400);
