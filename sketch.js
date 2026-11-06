@@ -91,8 +91,17 @@ function draw() {
   }
 
   if (type == "beach" || type == "desert"){
-    fill(240,240,170);
-    rect(-5,305,405,400);
+    if(name == "Stony Shore"){
+      fill(240,240,170);
+      rect(-5,305,405,400);
+      fill(150);
+      rect(-5,305,180,400);
+      rect(-5,350,300,50);
+    } else{
+      fill(240,240,170);
+      rect(-5,305,405,400);
+    }
+    
   }
 
   if (type == "mesa"){
@@ -101,12 +110,48 @@ function draw() {
   }
 
   if (type == "underground"){
-    fill(80,220,80);
+    if (name == "Deep Dark"){
+      fill(80,220,80);
+      rect(-5,5,405,400);
+      fill(100,60,20);
+      rect(-5,15,405,400);
+      fill(130);
+      rect(-5,75,405,400);
+      fill(0,20,40);
+      rect(-5,320,405,100);
+      rect(-5,270,90,100);
+       rect(320,270,90,100);
+    } else if (name == "Dripstone Caves"){
     rect(-5,5,405,400);
     fill(100,60,20);
     rect(-5,15,405,400);
     fill(130);
     rect(-5,75,405,400);
+    fill(105,85,85);
+      rect(-5,320,405,100);
+      rect(-5,270,90,100);
+       rect(320,270,90,100);
+      fill(80,220,80);
+    } else if (name == "Lush Caves"){
+    rect(-5,5,405,400);
+    fill(100,60,20);
+    rect(-5,15,405,400);
+    fill(130);
+    rect(-5,75,405,400);
+    fill(60,110,40);
+      rect(-5,320,405,100);
+      rect(-5,270,90,100);
+       rect(320,270,90,100);
+      fill(80,220,80);
+    } else{
+      fill(80,220,80);
+    rect(-5,5,405,400);
+    fill(100,60,20);
+    rect(-5,15,405,400);
+    fill(130);
+    rect(-5,75,405,400);
+    }
+    
   }
 
   if (type == "ice"){
@@ -168,10 +213,20 @@ function draw() {
     rect(25,20,120,100);
     }
     
-    fill(80,220,80);
+    if (name == "Mangrove Swamp"){
+      fill(80,120,80);
+    rect(-5,300,405,400);
+    fill(70,60,20);
+    rect(-5,310,405,400);
+      fill(40,75,60);
+    rect(200,300,405,55);
+    } else{
+      fill(80,220,80);
     rect(-5,300,405,400);
     fill(120,80,40);
     rect(-5,310,405,400);
+    }
+    
     
   }
 
@@ -197,10 +252,12 @@ function draw() {
     fill(20,40,20);
     rect(0,70,190,100);
     rect(25,20,120,100);
-    fill(70,100,70);
+    fill(80,120,80);
     rect(-5,300,405,400);
-    fill(120,80,40);
+    fill(70,60,20);
     rect(-5,310,405,400);
+    fill(40,75,60);
+    rect(200,300,405,55);
   }
 
   if (type == "plains"){
@@ -243,9 +300,18 @@ function draw() {
   }
 
   if (type == "mushroom"){
+    fill(200);
+    rect(80,70,70,400);
+    fill(170,0,0);
+    rect(20,60,190,160);
+    fill(230);
+    rect(150,60,60,50);
+    rect(20,170,60,50);
+    rect(40,75,70,60);
+    rect(125,145,70,60);
     fill(140,130,160);
     rect(-5,300,405,400);
-    fill(120,80,40);
+    fill(120,80,40)
     rect(-5,310,405,400);
   }
 
@@ -262,13 +328,49 @@ function draw() {
   }
 
   if (type == "nether"){
-    fill(80,15,15,110);
+    if (name == "Crimson Forest"){
+      fill(100,60,60);
+    rect(50,70,70,300);
+    fill(160,0,0);
+    rect(0,70,190,100);
+    rect(25,20,120,100);
+      fill(80,15,15,110);
     image(nethimg,25,310,70,70);
     image(nethimg,95,310,70,70);
     image(nethimg,165,310,70,70);
     image(nethimg,235,310,70,70);
     image(nethimg,305,310,70,70);
     rect(25,310,350,70);
+    } else if(name == "Warped Forest"){
+      fill(60,80,100);
+    rect(50,70,70,300);
+    fill(0,160,180);
+    rect(0,70,190,100);
+    rect(25,20,120,100);
+      fill(80,15,15,110);
+    image(nethimg,25,310,70,70);
+    image(nethimg,95,310,70,70);
+    image(nethimg,165,310,70,70);
+    image(nethimg,235,310,70,70);
+    image(nethimg,305,310,70,70);
+    rect(25,310,350,70);
+    } else if(name == "Basalt Deltas") {
+      fill(70);
+    rect(-5,310,200,100);
+    fill(20);
+    rect(180,310,200,100);
+    fill(250,150,0);
+    rect(300,310,350,100);
+    } else{
+      fill(80,15,15,110);
+    image(nethimg,25,310,70,70);
+    image(nethimg,95,310,70,70);
+    image(nethimg,165,310,70,70);
+    image(nethimg,235,310,70,70);
+    image(nethimg,305,310,70,70);
+    rect(25,310,350,70);
+    }
+    
     
   }
 
