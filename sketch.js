@@ -69,7 +69,11 @@ function draw() {
       background(100,175,255);
     }
   } else if (dimension == "nether"){
-    background(190,35,35);
+    if(name == "Soul Sand Valley") {
+    background(20,150,170);
+    } else{
+       background(190,35,35);
+    }
   } else if (dimension == "end"){
     background(10);
   }
@@ -361,6 +365,11 @@ function draw() {
     rect(180,310,200,100);
     fill(250,150,0);
     rect(300,310,350,100);
+    } else if(name == "Soul Sand Valley") {
+      fill(85,70,60);
+    rect(-5,310,250,100);
+    fill(75,60,50);
+    rect(240,310,350,100);
     } else{
       fill(80,15,15,110);
     image(nethimg,25,310,70,70);
